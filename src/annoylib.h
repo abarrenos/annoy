@@ -65,7 +65,6 @@ typedef signed __int64    int64_t;
 #ifdef ANNOYLIB_MULTITHREADED_BUILD
 #include <thread>
 #include <mutex>
-#include <shared_mutex>
 #endif
 
 #ifdef _MSC_VER
