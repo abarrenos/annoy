@@ -56,9 +56,6 @@ python_major_version = sys.version_info[0]
 if python_major_version == 3 or (python_major_version == 2 and os.name != 'nt'):
     extra_compile_args += ['-DANNOYLIB_MULTITHREADED_BUILD']
 
-    if os.name != 'nt':
-        extra_compile_args += ['-std=c++1y']
-
 # #349: something with OS X Mojave causes libstd not to be found
 if platform.system() == 'Darwin':
     extra_compile_args += ['-mmacosx-version-min=10.12']
