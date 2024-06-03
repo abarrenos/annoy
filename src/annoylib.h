@@ -1560,33 +1560,7 @@ public:
     }
   }
 
-  void lock_n_nodes() {
-    n_nodes_mutex.lock();
-  }
-  void unlock_n_nodes() {
-    n_nodes_mutex.unlock();
-  }
 
-  void lock_nodes() {
-    nodes_mutex.lock();
-  }
-  void unlock_nodes() {
-    nodes_mutex.unlock();
-  }
-
-  void lock_shared_nodes() {
-    nodes_mutex.lock_shared();
-  }
-  void unlock_shared_nodes() {
-    nodes_mutex.unlock_shared();
-  }
-
-  void lock_roots() {
-    roots_mutex.lock();
-  }
-  void unlock_roots() {
-    roots_mutex.unlock();
-  }
 };
 #endif
 
